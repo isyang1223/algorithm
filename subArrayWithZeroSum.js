@@ -1,4 +1,4 @@
-var arr = [4,-6,3,-1,4,2,7]
+var arr = [4,-6,3,-1,4,2,7];
 
 function subArrayWithZeroSum(arr){
     var dict = {};
@@ -6,11 +6,10 @@ function subArrayWithZeroSum(arr){
     for(var i = 0; i < arr.length; i++){
         sum += arr[i]
         if(dict[sum]) {
-            return true
+            return true;
         }
         dict[sum] = true;
     }   
     return false;
-
 }
-console.log(subArrayWithZeroSum(arr))
+console.log(subArrayWithZeroSum(arr));
